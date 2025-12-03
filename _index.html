@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>แบบสอบถาม</title>
+<style>
+    body {
+        font-family: Tahoma, sans-serif;
+    }
+    .container {
+        width: 500px;
+        margin: auto;
+        background: #f0e4ce;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #d2b48c;
+    }
+    h2 {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h2>แบบสอบถาม</h2>
+<hr>
+
+<div class="container">
+    <h3>ข้อมูลผู้ตอบแบบสอบถาม</h3>
+
+    <form>
+
+        ชื่อ-นามสกุล:
+        <br>
+        <input type="text" name="fullname" size="40">
+        <br><br>
+
+        รหัสนักศึกษา:
+        <br>
+        <input type="text" name="studentid" size="40">
+        <br><br>
+
+        เพศ:
+        <br>
+        <input type="radio" name="gender" value="male"> ชาย
+        <input type="radio" name="gender" value="female"> หญิง
+        <br><br>
+
+        สังกัดคณะ:
+        <br>
+        <select name="faculty" size="8">
+            <option>วิทยาศาสตร์</option>
+            <option>วิทยาการคอมพิวเตอร์</option>
+            <option>ครุศาสตร์</option>
+            <option>มนุษยศาสตร์</option>
+            <option>นิติศาสตร์</option>
+            <option>บริหารธุรกิจ</option>
+            <option>เกษตรศาสตร์</option>
+            <option>พยาบาลศาสตร์</option>
+            <option>สาธารณสุขศาสตร์</option>
+            <option>วิศวกรรมศาสตร์</option>
+        </select>
+        <br><br>
+
+        สีที่ชอบ (เลือกได้หลายข้อ):
+        <br>
+        <input type="checkbox" name="color" value="blue"> สีฟ้า
+        <input type="checkbox" name="color" value="pink"> สีชมพู
+        <input type="checkbox" name="color" value="black"> สีดำ
+        <br><br>
+
+        ผลไม้ที่ชอบ (เลือกได้หลายข้อ):
+        <br>
+        <input type="checkbox" name="fruit" value="apple"> แอปเปิ้ล
+        <input type="checkbox" name="fruit" value="orange"> ส้ม
+        <input type="checkbox" name="fruit" value="banana"> กล้วย
+        <input type="checkbox" name="fruit" value="grape"> องุ่น
+        <br><br>
+
+        กีฬาที่ชอบ (เลือกได้หลายข้อ):
+        <br>
+        <input type="checkbox" name="sport" value="football"> ฟุตบอล
+        <input type="checkbox" name="sport" value="volleyball"> วอลเลย์บอล
+        <input type="checkbox" name="sport" value="badminton"> แบดมินตัน
+        <input type="checkbox" name="sport" value="swimming"> ว่ายน้ำ
+        <br><br>
+
+        <input type="submit" value="บันทึก">
+
+    </form>
+</div>
+
+</body>
+</html>
